@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Főoldal</title>
+</head>
+<body class="relative">
+    <nav class="bg-accent p-4 shadow-lg fixed w-full top-0 left-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Főoldal Button for Sidebar -->
+            <label for="my-drawer" class="btn m-1 cursor-pointer">
+                <!-- Sidebar icon -->
+                <svg width="16px" height="16px" class="h-4 w-4 fill-current opacity-60 inline-block mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+                <span class="text-xl font-bold">Főoldal</span>
+            </label>
+
+            <!-- Themes Dropdown -->
+            <div class="dropdown relative">
+                <div tabindex="0" role="button" class="btn m-1">
+                    <span class="text-xl font-bold">Themes</span>
+                    <svg width="16px" height="16px" class="h-4 w-4 fill-current opacity-60 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                        <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                    </svg>
+                </div>
+                <ul tabindex="0" class="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52 absolute right-0">
+                    <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Light" value="light"/></li>
+                    <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Night" value="night"/></li>
+                    <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Forest" value="forest"/></li>
+                    <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Retro" value="retro"/></li>
+                    <li><input type="radio" name="theme-dropdown" class="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label="Valentine" value="valentine"/></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Drawer for Sidebar -->
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+        <!-- Page content -->
+        <div class="pt-20">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nostrum ab, sint temporibus impedit cupiditate eveniet consequatur facere asperiores quasi, consectetur libero voluptas nemo culpa et delectus obcaecati blanditiis quos?
+            Nostrum adipisci enim ratione culpa necessitatibus totam deleniti sunt suscipit voluptas aspernatur? Quos voluptate eos iste voluptatem, similique enim distinctio repellendus debitis sequi doloremque est dolores pariatur id repudiandae deleniti.
+            Porro voluptatem ab, labore architecto dolore nihil aperiam, sit esse, obcaecati eaque maxime id corrupti exercitationem iste? Atque ab beatae numquam quo et reiciendis cumque quidem, dolor rem sint delectus?
+            Non, praesentium impedit autem numquam modi ipsa perferendis obcaecati est deserunt mollitia voluptate soluta ad qui quae unde magnam quibusdam labore pariatur consectetur recusandae deleniti fugit ab. Doloremque, omnis expedita?
+            Omnis, sequi. Hic deleniti aperiam nobis ab accusantium iusto quasi dolores, molestiae aspernatur beatae dolor reprehenderit, laborum possimus inventore eaque quas velit aliquid, expedita veritatis consectetur. Nesciunt aspernatur ipsa nisi.
+            Atque ex pariatur consequatur possimus ducimus minus libero architecto blanditiis, magnam, sit molestiae. Sapiente accusantium vitae cum dolore, est, possimus a quam ullam aspernatur veniam aperiam fuga totam! Praesentium, autem.
+            Architecto, amet minima? Quaerat enim sed expedita quis fuga deleniti ex commodi neque consequuntur quo, nam tenetur ratione facere aspernatur non atque a doloremque modi, repellendus magnam alias. Asperiores, delectus.
+            Non nihil, odio itaque, qui cumque praesentium deserunt laboriosam labore blanditiis a accusantium amet, ducimus harum eveniet eligendi! Facilis soluta debitis accusantium odit necessitatibus in sit suscipit beatae odio dolorem?
+            Molestias libero alias doloremque delectus minus molestiae sed modi, provident, soluta laudantium repellendus voluptas maiores mollitia repellat facilis quod. Rerum ad aliquam similique dolores quam quidem reiciendis magni at explicabo!
+            Soluta maxime fugiat amet temporibus assumenda tempora minus eveniet corrupti laudantium laborum! Nostrum excepturi quisquam ipsa rem at inventore ducimus minus, molestiae tempore delectus numquam perferendis doloribus corporis perspiciatis magnam.</h1>
+        </div>
+    </div>
+    <div class="drawer-side">
+        <label for="my-drawer" class="drawer-overlay"></label> 
+        <ul class="menu p-4 w-80 h-full bg-base-300 text-base-content z-[5]">
+            <li><a>Easter egg 1</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Easter egg</a></li>
+            <li><a href="./bots.html">Discord botok</a></li>
+            <li><a></a></li>
+        </ul>
+    </div>
+</body>
+</html>
