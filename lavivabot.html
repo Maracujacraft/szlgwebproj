@@ -9,7 +9,7 @@
     <!-- TailwindCSS script -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Title -->
-    <title>Főoldal</title>
+    <title>LaVivaBot</title>
 </head>
 <body class="relative">
     <!-- Navbar -->
@@ -24,15 +24,15 @@
                 </div>
                 <!-- Dropdown Content -->
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="./lavivabot.html">Discord bot</a></li>
-                    <li></li>
-                    <li></li>
+                    <li><a href="./index.html" class="text-xl font-bold">Főoldal</a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
                 </ul>
             </div>
         </div>
         <!-- Navbar Center -->
         <div class="navbar-center">
-            <a class="btn btn-ghost text-xl" href="./index.html">Főoldal</a>
+            <a class="btn btn-ghost text-xl" href="./index.html">LaVivaBot</a>
         </div>
         <!-- Navbar End -->
         <div class="navbar-end">
@@ -66,27 +66,27 @@
     <div class="chat-footer opacity-50">
       Seen
     </div>
-</div>
+  </div>
 
-<script>
-// Check if theme preference is saved in localStorage
-if (localStorage.getItem('theme')) {
-    // Apply the saved theme
-    document.body.classList.add(localStorage.getItem('theme'));
-}
-
-// Listen for changes in the theme dropdown
-document.querySelectorAll('.theme-controller').forEach(item => {
-    item.addEventListener('change', event => {
-        // Remove existing theme class
-        document.body.classList.remove('black', 'night', 'forest', 'retro', 'valentine');
-        // Apply new theme class
-        document.body.classList.add(event.target.value);
-        // Save the selected theme in localStorage
-        localStorage.setItem('theme', event.target.value);
+  <script>
+    // Check if theme preference is saved in localStorage
+    if (localStorage.getItem('theme')) {
+        // Apply the saved theme
+        document.body.classList.add(localStorage.getItem('theme'));
+    }
+    
+    // Listen for changes in the theme dropdown
+    document.querySelectorAll('.theme-controller').forEach(item => {
+        item.addEventListener('change', event => {
+            // Remove existing theme class
+            document.body.classList.remove('black', 'night', 'forest', 'retro', 'valentine');
+            // Apply new theme class
+            document.body.classList.add(event.target.value);
+            // Save the selected theme in localStorage
+            localStorage.setItem('theme', event.target.value);
+        });
     });
-});
-</script>
+    </script>
 
 </body>
 </html>
