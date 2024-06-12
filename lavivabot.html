@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- theme saver -->
     <script src="theme_saver_ultimate.js"></script>
-    <!-- Title -->
-    <title>LaVivaBot</title>
+    <!-- style.css -->
+    <title>Portfólió - Balogh Mátyás - Discord.py</title>
 </head>
 <body class="relative">
     <!-- Navbar -->
@@ -27,7 +27,7 @@
                 <!-- Dropdown Content -->
                 <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a href="./index.html" class="text-xl font-bold">Főoldal</a></li>
-                    <li><a href="./lavivabot.html" class="text-xl">LaVivaBot</a></li>
+                    <li><a class="text-xl">Discord.py</a></li>
                     <li><a href="./karesz_logo.html" class="text-xl">LogoKaresz</a></li>
                     <li><a href="./karesz_oop.html" class="text-xl">OOPKaresz</a></li>
                     <li><a href="./3000.html" class="text-xl">3000+</a></li>
@@ -37,7 +37,7 @@
         </div>
         <!-- Navbar Center -->
         <div class="navbar-center">
-            <a class="btn btn-ghost text-xl" href="./index.html">LaVivaBot</a>
+            <a class="btn btn-ghost text-xl" href="./index.html">Discord.py</a>
         </div>
         <!-- Navbar End -->
         <div class="navbar-end">
@@ -63,14 +63,85 @@
     </div>
 <!--main page-->
 <div class="chat chat-start">
-    <div class="chat-header">
-      Balogh Mátyás
-      <time class="text-xs opacity-50">at 24/06/11 19:26</time>
-    </div>
-    <div class="chat-bubble">Üdvözzölek az oldalamon!</div>
+    <div class="chat-bubble">Itt egy példa pythonban működő discord bot, aminek még nem nagyon van funkcionalitása</div>
     <div class="chat-footer opacity-50">
-      Seen
+        Seen
+        </div>
+        </div>
     </div>
-  </div>
+<!-- working bot -->
+<div class="container mx-auto px-80 py-1">
+    <div class="mockup-code">
+        <pre data-prefix="$" class="text-base md:text-sm lg:text-sm"><code>import os
+    import random
+    import discord
+    from dotenv import load_dotenv
+    
+    load_dotenv()
+    TOKEN = os.getenv('DISCORD_TOKEN')
+    
+    intents = discord.Intents.default()
+    intents.typing = True
+    intents.message_content = True
+    client = discord.Client(intents=intents)
+    
+    @client.event
+    async def on_ready():
+        print(f'{client.user.name} has connected to Discord!')
+    
+    @client.event
+    async def on_message(message):
+        if message.author == client.user:
+            return
+    
+        brooklyn_99_quotes = [
+            'I\'m the human form of the 💯 emoji.',
+            'Bingpot!',
+            (
+                'Cool. Cool cool cool cool cool cool cool, '
+                'no doubt no doubt no doubt no doubt.'
+            ),
+        ]
+    
+        if message.content == '99!':
+            response = random.choice(brooklyn_99_quotes)
+            await message.channel.send(response)
+    
+    @client.event
+    async def on_error(event, *args, **kwargs):
+        # Print any errors that occur
+        print(f"An error occurred: {event}")
+    
+    client.run(TOKEN)</code></pre> 
+    </div>
+</div>
+<div class="chat chat-start">
+    <div class="chat-bubble">Az én botom kódja, ennél, a 894 sor kódjával kicsivel hosszabb, ezért annak nem töltöm fel a kódját</div>
+        </div>
+    </div>
+<div class="chat chat-start">
+    <div class="chat-bubble">De itt van pár parancs. Például, itt látható a help parancs!</div>
+        </div>
+    </div>
+    <div class="chat chat-start">
+        <div class="chat-bubble"><img src="./images/LaVivaBot/lavivabot_1.png" alt="lavivabot help command"></div>
+            </div>
+        </div>
+<div class="chat chat-start">
+    <div class="chat-bubble">Spamelt már valaki a discord szervereden? Itt a megoldás:</div>
+        </div>
+    </div>
+    <div class="chat chat-start">
+        <div class="chat-bubble"><img src="./images/LaVivaBot/lavivabot_3.png" alt="lavivabot warn command"></div>
+            </div>
+        </div>
+<div class="chat chat-start">
+    <div class="chat-bubble">Ha túl sokat spamelnének, és ez zavar?</div>
+        </div>
+    </div>
+    <div class="chat chat-start">
+        <div class="chat-bubble"><img src="./images/LaVivaBot/lavivabot_4.png" alt="lavivabot kick command"></div>
+            </div>
+        </div>
 </body>
 </html>
