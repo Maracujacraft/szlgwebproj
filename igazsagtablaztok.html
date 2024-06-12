@@ -63,14 +63,62 @@
     </div>
 <!--main page-->
 <div class="chat chat-start">
-    <div class="chat-header">
-      Balogh Mátyás
-      <time class="text-xs opacity-50">at 24/06/11 19:26</time>
+    <div class="chat-bubble">Szia, tudod mik azok az igazsagtablaztok?</div>
+</div>
+<div class="chat chat-end">
+    <div class="chat-bubble">Háát, nem nagyon vagyok benne biztos, de ha segítesz biztos eszembe jut</div>
+</div>
+<div class="chat chat-start">
+    <div class="chat-bubble">Okés! Az igazságtáblázatok logikai műveletek eredményeit mutatják különböző bemenetek alapján. Minden lehetséges bemenet kombinációhoz hozzárendelik a megfelelő kimenetet. Például egy egyszerű AND művelet igazságtáblázata két bemenettel (A és B) így néz ki:
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-baqh{text-align:center;vertical-align:top}
+            .tg .tg-lap0{font-size:100%;text-align:center;vertical-align:top}
+            </style>
+            <table class="tg"><thead>
+              <tr>
+                <th class="tg-lap0">A</th>
+                <th class="tg-baqh">B</th>
+                <th class="tg-baqh">A &amp; B<br></th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">0</td>
+                <td class="tg-baqh">1</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">0<br></td>
+                <td class="tg-baqh">1</td>
+                <td class="tg-baqh">1</td>
+              </tr>
+              <tr>
+                <td class="tg-baqh">0</td>
+                <td class="tg-baqh">0</td>
+                <td class="tg-baqh">0</td>
+              </tr>
+            </tbody>
+            </table>
+        Ez azt mutatja, hogy az AND művelet csak akkor ad igaz (1) kimenetet, ha mindkét bemenet igaz (1).
     </div>
-    <div class="chat-bubble">Üdvözzölek az oldalamon!</div>
-    <div class="chat-footer opacity-50">
-      Seen
-    </div>
-  </div>
+</div>
+<div class="chat chat-end">
+    <div class="chat-bubble">Ohh, azt hiszem értem!</div>
+</div>
+<style>
+    .chat-bubble {
+        max-width: 50%; /* Adjust the percentage as needed */
+        word-wrap: break-word;
+    }
+</style>
 </body>
 </html>
